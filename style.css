@@ -1,0 +1,33 @@
+body{
+    
+}
+.principal{
+    background-color: #CCCCCC;
+
+}
+h1{ 
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+#missao{
+    font-size: 20px;
+}
+#missao strong{
+    color: #FF0000;
+}
+#banner{
+    width: 100%;
+}
+#lista{
+    font-style: italic;
+}
+.beneficios{
+    text-align: center;
+}
+#imgbene{
+    width: 50%;
+    align-items:flex-start;
+}
