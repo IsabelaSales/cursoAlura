@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="logo.png" alt="Logo Barbearia Alura"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pgProdutos.html">Produtos</a></li>
+                    <li><a a href="contatos.html"> Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required placeholder=" Nome Sobrenome"> 
+           
+            <!-- 
+            required -> Tornar o campo de formulário obrigatorio
+            placeholder -> sobra com exemplo de como o campo deverá ser preenchido
+            checked -> deixar o opçao selecionada 
+            fieldset -> usamos a tag fieldset. Ela é referente à configuração de um ou mais campos referentes a um assunto específico.
+            legend ->E dentro de um fieldset não temos parágrafos, nós temos o título, e o título de um fildset é chamado de legend.
+            transition + all (todos os elementos) -> configurar a transição visual de um elemento, que dure 3 segundo
+            transform: scale()-> propriedade do CSS usamos para aumentar um elemento proporcionalmente propriedade transform e o valor dentro dela é o “scale”, ou seja, de escala e medida
+            transform: rotate(70deg); faz o elemnto girar deg grau em inglês
+            Utilizamos a tag <table> para criar uma tabela.
+            Utilizamos a tag <tr> para marcar uma linha de uma tabela.
+            Utilizamos a tag <td> para marcar uma coluna de uma tabela.
+        -->
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
+
+            <label for="menssagem">Messagem</label>
+            <textarea id="messagem" cols="70" rows=""></textarea required>
+
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+                
+                <label for="radio-email"><input type="radio" name="contato" value="telefone" id="radio-email">E-mail</label>
+                
+                <label for="radio-telefone"><input type="radio" name="contato" value="contato" id="radio-telefone">Telefone</label>
+                
+                <label for="radio-whatsaap"><input type="radio" name="contato" id="radio-whatsaap" checked>Whatsaap</label>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Qual horario prefere ser atendido? </legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label><input type="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label> 
+            
+            <input type="submit" value="Enviar Formulário" id="checkbox" class="enviar">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h - 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+        <img src="logo-branco.png" alt="Logo Barbearia ALura">
+        <p class="copyright">&copy;Copyright Barbearia Alura – 2019</p>
+    </footer>
+    
+</body>
+</html>
