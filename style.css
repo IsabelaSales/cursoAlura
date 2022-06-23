@@ -1,3 +1,6 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 header{
     background-color: #BBBBBB;
     padding: 20px 0;
@@ -80,10 +83,7 @@ footer{
     font-size: 13px;
     margin: 20px 0 0;
 }
-main{
-    width: 940px;
-    margin: 0 auto;
-}
+
 form{
     margin: 40px 0;
 }
@@ -136,4 +136,122 @@ thead{
 td, th{
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+/* css pg principal */
+.banner{
+    width: 100%;
+}
+.titulo-princial{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+.principal p {
+    margin: 0 0 1em;
+}
+strong{
+    font-weight: bold;
+}
+em{
+    font-style: italic;
+}
+.imgtensilio{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+
+}
+/* Como fazer um degradê de cinco cores em um elemento?
+background: linear-gradient(gray, yellow, red, orange, blue)
+Como criar um elemento no HTML antes do meu item, através do CSS?
+Com a propriedade :before
+A propriedade :after serve para criar um pseudo-elemento após um elemento do HTML.
+Com a propriedade :first-letter, eu consigo marcar a primeira letra de qualquer elemento de texto.
+
+Como fazemos para selecionar o último <h2>?section > p + h2O último h2 é filho direto da section e irmão do p
+
+Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
+main > p {
+}
+
+Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+img + p {
+}
+
+
+Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
+img ~ p {
+}
+
+Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
+main p:not(#missao) {
+}
+
+Como usar as medidas proporcionais para deixar um elemento de 100% de largura com o equivalente a um terço do elemento pai, menos 10px?
+width: calc( (100% / 3) - 10px ) - Essa é uma forma mais complexa, não precisa dessa primeira conta! 
+width: calc( 33% - 10px )- Essa é a forma mais direta!
+
+*/
+
+
+.mapa{
+    background: linear-gradient(#FEFEFE, #888888);
+    padding: 3m 0;
+
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+} 
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+
+}
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+    
+
+}
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+
+}
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagem-beneficios{
+    width: 60%;
+    opacity: 1;
+}
+.imagem-benefiicos:hover{
+    opacity: 0.3;
+}
+.video{
+    margin: 2em auto;
+    width: 560px;
+
+}
+.lista-beneficios li{
+    line-height: 1.5;
+    
+}
+.lista-beneficios li:first-child{
+    font-weight: bold ;
+}
+.lista-beneficios li::before{
+    content:"✷";
 }
