@@ -268,27 +268,33 @@ Dentro do @media (max-width: 480px) {}É dentro dessa media query que criamos um
     content:"✷";
 }
 @media screen and (max-width: 480px){
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produto{
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produto, form{
         width: auto;
     }
     h1{
         text-align: center;
     }
-    nav{
+    nav, input{
         position:static;
     }
     .lista-beneficios, .imagem-beneficios{
         width: 100%;
     }
-    .produto{
+    .produto, #checkbox{
         display: grid;
-      
         
     }
 
-    .produto li{
+    .produto li, #messagem, #checkbox{
        width: 90%; 
        justify-self: center;
-       margin-bottom: 2em;
+       margin-bottom: auto;
+    }
+
+    form{
+        margin: 2em;
+    }
+    table, #checkbox, fieldset{
+        margin: 1em auto;
     }
 }
