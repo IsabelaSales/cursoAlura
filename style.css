@@ -24,10 +24,10 @@ nav a:hover{
     color: #c78c19;
     text-decoration: underline;
 }
-nav a{
+nav li a{
     text-transform:uppercase;
     color: #000000;
-    font-weight:bold;
+    font-weight:bold,;
     font-size: 22px;
     text-decoration: none;
     
@@ -268,7 +268,7 @@ Dentro do @media (max-width: 480px) {}É dentro dessa media query que criamos um
     content:"✷";
 }
 @media screen and (max-width: 480px){
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produto{
         width: auto;
     }
     h1{
@@ -279,5 +279,16 @@ Dentro do @media (max-width: 480px) {}É dentro dessa media query que criamos um
     }
     .lista-beneficios, .imagem-beneficios{
         width: 100%;
+    }
+    .produto{
+        display: grid;
+      
+        
+    }
+
+    .produto li{
+       width: 90%; 
+       justify-self: center;
+       margin-bottom: 2em;
     }
 }
