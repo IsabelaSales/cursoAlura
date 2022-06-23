@@ -24,12 +24,13 @@ nav a:hover{
     color: #c78c19;
     text-decoration: underline;
 }
-nav li a{
-    text-decoration: none ;
+nav a{
     text-transform:uppercase;
     color: #000000;
-    font-weight: bolder;
+    font-weight:bold;
     font-size: 22px;
+    text-decoration: none;
+    
 }
 .produto{
     width: 940px;
@@ -199,6 +200,15 @@ Como usar as medidas proporcionais para deixar um elemento de 100% de largura co
 width: calc( (100% / 3) - 10px ) - Essa é uma forma mais complexa, não precisa dessa primeira conta! 
 width: calc( 33% - 10px )- Essa é a forma mais direta!
 
+
+Como fazer uma sombra interna em um elemento?
+
+box-shadow: inset 0 0 5px black;Sombra interna, preta, com 5px de espalhamento.
+
+Como adicionar um sombreamento em textos, com a propriedade CSS text-shadow.
+
+Como marcar um elemento para que ele seja apresentado de outra forma, em uma tela de até 480px?
+Dentro do @media (max-width: 480px) {}É dentro dessa media query que criamos um estilo visual que compreenda telas de até 480px.
 */
 
 
@@ -236,8 +246,10 @@ width: calc( 33% - 10px )- Essa é a forma mais direta!
 .imagem-beneficios{
     width: 60%;
     opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
 }
-.imagem-benefiicos:hover{
+.imagem-beneficios:hover{
     opacity: 0.3;
 }
 .video{
@@ -254,4 +266,18 @@ width: calc( 33% - 10px )- Essa é a forma mais direta!
 }
 .lista-beneficios li::before{
     content:"✷";
+}
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position:static;
+    }
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
 }
