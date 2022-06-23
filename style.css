@@ -288,7 +288,7 @@ Dentro do @media (max-width: 480px) {}É dentro dessa media query que criamos um
     .produto li, #messagem, #checkbox{
        width: 90%; 
        justify-self: center;
-       margin-bottom: auto;
+       margin-bottom: 1em;
     }
 
     form{
